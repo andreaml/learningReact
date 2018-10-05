@@ -1,4 +1,6 @@
 import React from 'react';
+import { string } from 'prop-types';
+
 const Footer = (props) => {
   const { copyright } = props;
   return (
@@ -7,5 +9,9 @@ const Footer = (props) => {
     </div>
   );
 }
+
+Footer.propTypes = {
+  copyright: string
+};
 
 export default Footer;

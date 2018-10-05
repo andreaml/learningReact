@@ -1,4 +1,6 @@
 import React from 'react';
+import { element } from 'prop-types';
+
 const Content = (props) => {
   const { children } = props;
   return ( 
@@ -6,6 +8,10 @@ const Content = (props) => {
       {children}
     </div>
   );
+}
+
+Content.propTypes = {
+  children: element
 }
 
 export default Content;
